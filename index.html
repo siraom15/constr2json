@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parser</title>
+</head>
+
+<body onload="parse()">
+    <textarea name="xmlInput" id="xmlInput" cols="120" rows="30">
+<connectionStrings>
+    <add name="DemoConnectionString" connectionString="Data Source=DESKTOP-1;Initial Catalog=Demo;Integrated Security=True" providerName="System.Data.SqlClient" />
+    <add  providerName="System.Data.SqlClient2" connectionString="Data Source=DESKTOP-1;Initial Catalog=Demo;Integrated Security=True" name="DemoConnectionString2"  />
+</connectionStrings>
+    </textarea>
+    <br />
+    <button id="parse" onclick="parse()">Parse</button>
+    <br />
+    <textarea name="xmlInput" id="output" cols="120" rows="30">
+    </textarea>
+</body>
+<script src="parser.js"></script>
+
+</html>
